@@ -39,10 +39,10 @@ extern "C" {
 
 #define APP_GSDML_API 0
 
-#define APP_GSDML_DEFAULT_STATION_NAME "rt-labs-dev"
+#define APP_GSDML_DEFAULT_STATION_NAME "VarioX-IPC"
 
 /* GSDML tag: VendorID */
-#define APP_GSDML_VENDOR_ID 0x0493
+#define APP_GSDML_VENDOR_ID 0x1111
 
 /* GSDML tag: DeviceID */
 #define APP_GSDML_DEVICE_ID 0x0002
@@ -77,10 +77,10 @@ extern "C" {
    (PNET_SUPPORTED_IM1 | PNET_SUPPORTED_IM2 | PNET_SUPPORTED_IM3)
 
 /* GSDML tag: OrderNumber */
-#define APP_GSDML_ORDER_ID "12345 Abcdefghijk"
+#define APP_GSDML_ORDER_ID "VX_OrdnerN"
 
 /* GSDML tag: ModuleInfo / Name */
-#define APP_GSDML_PRODUCT_NAME "P-Net Sample Application"
+#define APP_GSDML_PRODUCT_NAME "VarioX DCP-App"
 
 /* GSDML tag: MinDeviceInterval */
 #define APP_GSDML_MIN_DEVICE_INTERVAL 32 /* 1 ms */
