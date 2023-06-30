@@ -31,6 +31,7 @@ if ! [ "${LED_STATE}" = "0" -o "${LED_STATE}" = "1" ]; then
    exit 1
 fi
 
-echo ${LED_STATE} > "pnet_led_${LED_NUMBER}.txt"
+#echo ${LED_STATE} > "pnet_led_${LED_NUMBER}.txt"
+CoProLibTest mled 11111111111111111111 ${LED_STATE}
 
 exit 0
