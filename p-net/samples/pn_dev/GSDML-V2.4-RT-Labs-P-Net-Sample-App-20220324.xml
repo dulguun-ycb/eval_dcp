@@ -92,9 +92,6 @@ Add additional PortSubmoduleItems to support additional ports
                   </PortSubmoduleItem>
 -->
                </SystemDefinedSubmoduleList>
-               <Graphics>
-                  <GraphicItemRef Type="DeviceSymbol" GraphicItemTarget="RT-LabsStackImage"/>
-               </Graphics>
             </DeviceAccessPointItem>
          </DeviceAccessPointList>
          <ModuleList>
@@ -252,9 +249,7 @@ Add additional PortSubmoduleItems to support additional ports
                </ErrorCode2Value>
             </LogBookEntryItem>
          </LogBookEntryList>
-         <GraphicsList>
-            <GraphicItem ID="RT-LabsStackImage" GraphicFile="GSDML-RT-LABS-STACK"/>
-         </GraphicsList>
+
          <ExternalTextList>
             <PrimaryLanguage>
                <Text TextId="IDT_INFO_Device" Value="https://github.com/rtlabs-com/p-net"/>
