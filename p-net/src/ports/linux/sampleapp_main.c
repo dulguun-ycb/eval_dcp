@@ -425,7 +425,7 @@ int square(sd_bus_message *msg, void *userdata, sd_bus_error *ret_error) {
     return ret;
 }
 
-/**/
+/**/ 
 int dbus_setup(){
     sd_bus_error error = SD_BUS_ERROR_NULL;
     sd_bus_slot *slot = NULL;
