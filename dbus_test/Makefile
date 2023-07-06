@@ -1,0 +1,24 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99
+LDFLAGS = -lsystemd
+
+# Quelldateien
+PROVIDER_SRC = service.c
+CONSUMER_SRC = client.c
+
+# Zielnamen
+PROVIDER_TARGET = service
+CONSUMER_TARGET = client
+
+.PHONY: all clean
+
+all: $(PROVIDER_TARGET) $(CONSUMER_TARGET)
+
+$(PROVIDER_TARGET): $(PROVIDER_SRC)
+	$(CC) $(CFLAGS) -o $(PROVIDER_TARGET) $(PROVIDER_SRC) $(LDFLAGS)
+
+$(CONSUMER_TARGET): $(CONSUMER_SRC)
+	$(CC) $(CFLAGS) -o $(CONSUMER_TARGET) $(CONSUMER_SRC) $(LDFLAGS)
+
+clean:
+	rm -f $(PROVIDER_TARGET) $(CONSUMER_TARGET)

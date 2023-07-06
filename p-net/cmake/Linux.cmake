@@ -63,6 +63,7 @@ target_link_libraries(profinet
   $<$<CONFIG:Coverage>:--coverage>
   )
 
+
 target_include_directories(pn_dev
   PRIVATE
   samples/pn_dev
@@ -84,14 +85,21 @@ target_compile_options(pn_dev
   -Wall
   -Wextra
   -Werror
+  -lsystemd
   -Wno-unused-parameter
   -ffunction-sections
   -fdata-sections
+  -std=c99
   )
 
 target_link_options(pn_dev
    PRIVATE
    -Wl,--gc-sections
+)
+
+target_link_libraries(pn_dev
+  PRIVATE
+  systemd
 )
 
 install (FILES
